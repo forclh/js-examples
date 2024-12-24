@@ -1,0 +1,22 @@
+body {
+  background: #000;
+}
+
+.card {
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px auto;
+  transition: 0.2s;
+}
+
+.card img {
+  width: 400px;
+}
+
+.card:hover {
+  box-shadow:
+    -3px -3px 20px #54a29e,
+    3px 3px 20px #a79d66;
+
+  transform: perspective(800px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+}
