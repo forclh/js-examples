@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS下划线效果 </title>
+  <style>
+    .title {
+      color: #333;
+      line-height: 2;
+    }
+
+    .title span {
+      /* 渐变背景的本质就是一张背景图（虚拟的位图），因此可以设置尺寸 */
+      background: linear-gradient(to right, #e514f0, #0ed7ed) no-repeat;
+      background-size: 0 2px;
+      background-position: right bottom;
+      transition: background-size 1s;
+    }
+
+    .title span:hover {
+      background-position: left bottom;
+      background-size: 100% 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="title">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo quos iure cumque ducimus nesciunt
+      asperiores reiciendis ratione provident excepturi quibusdam rerum, dicta iste laborum sunt soluta corrupti minus.
+      Voluptatibus!
+    </span>
+  </h2>
+
+</body>
+
+</html>
